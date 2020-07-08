@@ -1,0 +1,173 @@
+@import '../@__mixin/display-flex.scss',
+'../$__variables/1__color/color__section1.scss',
+'../$__variables/2__font-color/font-color__section1.scss';
+
+.body1__col3 {
+  grid-row: 2;
+  grid-column: 10/13;
+  border: 7px solid $body1__col_border;
+  border-radius: 15px;
+  background-color: $body1__col_bg;
+  z-index: 99;
+
+  .virez {
+    @include flex-jstf-start();
+    margin: 0 auto;
+    position: relative;
+    top: -7px;
+    width: 150px;
+    height: 35px;
+    background-color: $body1__col__virez_bg;
+    border: 7px solid $body1__col_border;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+
+    .besplatno {
+      margin-left: 10px;
+      font-family: Roboto-Regular;
+      color: $body1__col__virez_b_fc;
+    }
+  }
+
+  .d1c3__date {
+    font-family: Roboto-Regular;
+    font-size: calc((20/14) * 1rem);
+    margin: 15px 20px;
+
+    .date__smart {
+      font-family: Roboto-Medium;
+      color: $d1c3__date__smart_fc;
+    }
+  }
+
+  .d1c3__priceBlock {
+    @include flex-jstf-spc-evnl();
+    height: 70px;
+
+    .d1c3__price {
+      font-family: Roboto-Regular;
+      font-size: 1rem;
+
+      .priceOld__text {
+        color: $d1c3__date__priceOld__text_fc;
+      }
+
+      .priceOld__sum {
+        font-family: Roboto-Light;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 88px;
+          height: 23px;
+          background-image: url(/images/section1/cros.png);
+          background-repeat: no-repeat;
+          left: 5px;
+          top: 10px;
+        }
+      }
+
+      .priceNew__sum {
+        font-family: Roboto-Black;
+        background-color: $d1c3__date__priceNew__sum_bg;
+        border-radius: 5px;
+      }
+    }
+
+    .priceSum {
+      font-size: calc((34/14) * 1rem);
+      margin-top: 11px;
+      padding: 4px 10px;
+    }
+  }
+
+  .d1c3__priceForm {
+    @include flex-ff-clmn-cntr();
+
+    .priceForm__input {
+      @include flex-al-cntr();
+      width: 220px;
+      height: 65px;
+      background-color: $d1c3__date__priceForm__input_bg;
+      border-radius: 30px;
+      margin: 5px 0;
+
+      img {
+        margin-left: 20px;
+      }
+
+      input {
+        width: 155px;
+        border: none;
+        background-color: $d1c3__date__priceForm__input_bg;
+        font-family: Roboto-Regular;
+        margin-left: 15px;
+        font-size: calc((16/14) * 1rem);
+        outline: none;
+      }
+    }
+
+    .priceButton_body {
+      @include flex-jstf-cntr();
+      margin-top: 10px;
+      width: 218px;
+      height: 70px;
+      background-color: $d1c3__date__priceButton_body_bg;
+      border-radius: 70px;
+
+      .d1c3__priceButton {
+        width: 208px;
+        height: 60px;
+        font-family: Roboto-Bold;
+        font-size: calc((16/14) * 1rem);
+        background-color: $d1c3__date__priceButton_body_bg;
+        border: 2px solid $d1c3__date__priceButton_body_border;
+        border-radius: 60px;
+        outline: none;
+
+        .priceButton__size {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+
+  .d1c3__priceBalance {
+    margin-top: 20px;
+    font-family: Roboto-Regular;
+    font-size: calc((18/14) * 1rem);
+
+    .priceBalance__sum {
+      font-family: Roboto-Medium;
+      color: $d1c3__date__priceBalance__sum_fc;
+    }
+  }
+
+  .d1c3__priceGuard {
+    @include flex-jstf-cntr();
+    margin-top: 17px;
+    height: 44px;
+    background-color: $d1c3__date__d1c3__priceGuard_bg;
+    font-family: Roboto-Regular;
+    font-size: 1rem;
+    color: $d1c3__date__d1c3__priceGuard_fc;
+    border-radius: 0 0 8px 8px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .d1c3__priceReinbow {
+    position: relative;
+    left: 240px;
+    bottom: 375px;
+  }
+
+  .d1c3__priceBlock,
+  .d1c3__date,
+  .d1c3__priceBalance {
+    text-align: center;
+  }
+}

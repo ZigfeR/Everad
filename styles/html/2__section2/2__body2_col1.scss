@@ -1,0 +1,34 @@
+@import '../@__mixin/display-flex.scss',
+'../$__variables/2__font-color/font-color__section2.scss';
+
+.body2__logo-body,
+.body2__col1 {
+  grid-column: 1/13;
+  @include flex-jstf-cntr();
+}
+
+.body2__col1 {
+  margin-top: -45px;
+}
+
+.body2__logo-body {
+  margin-top: 28px;
+}
+
+.b2c3--body {
+  @include flex-ff-clmn-cntr();
+
+  h2 {
+    margin-top: 15px;
+    font-family: Roboto-Black;
+    font-size: calc((48/14) * 1rem);
+    color: $body2__h2_fc;
+  }
+
+  .to__h2 {
+    margin-top: 24px;
+    font-family: Roboto-Bold;
+    font-size: calc((24/14) * 1rem);
+    color: $body2__to_h2_fc;
+  }
+}

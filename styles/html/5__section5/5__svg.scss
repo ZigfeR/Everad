@@ -1,0 +1,9 @@
+@import '../$__variables/1__color/color__section4.scss';
+
+.wave4 {
+    position: absolute;
+    fill: $section4_bg_c;
+    top: 0px;
+    left: 0px;
+    transform: rotate(180deg)
+}

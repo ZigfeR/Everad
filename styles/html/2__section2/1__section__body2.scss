@@ -1,0 +1,9 @@
+.section__body2 {
+    width: 1170px;
+    height: 900px;
+    display: grid;
+    grid-template-rows: 92px 110px 330px 150px;
+    grid-template-columns: repeat(12, 70px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}

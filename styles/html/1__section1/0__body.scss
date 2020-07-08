@@ -1,0 +1,11 @@
+.section1 {
+  background-color: #f0f9fa;
+  background-image: url('../../../images/section1/background.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  @import '../1__section1/1__section__body1.scss',
+  '../1__section1/2__body1_header.scss',
+  '../1__section1/3__body1_col1.scss',
+  '../1__section1/4__body1_col2.scss',
+  '../1__section1/5__body1_col3.scss';
+}

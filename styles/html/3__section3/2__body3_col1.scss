@@ -1,0 +1,21 @@
+@import '../@__mixin/display-flex.scss',
+'../$__variables/2__font-color/font-color__section3.scss';
+
+.body3__logo-body,
+.body3__col1 {
+  grid-column: 1/13;
+  @include flex-ff-clmn-cntr();
+  text-align: center;
+}
+
+.body3__logo-body {
+  margin-top: 50px;
+}
+
+.body3__col1 {
+  h2 {
+    font-family: Roboto-Black;
+    font-size: calc((48/14) * 1rem);
+    color: $body3__col1_h2_fc;
+  }
+}

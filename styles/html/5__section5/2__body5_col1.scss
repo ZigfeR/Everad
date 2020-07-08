@@ -1,0 +1,25 @@
+@import '../@__mixin/display-flex.scss',
+'../$__variables/2__font-color/font-color__section5.scss';
+
+.body5__logo-body,
+.body5__col1 {
+  grid-column: 1/13;
+  @include flex-jstf-cntr();
+}
+
+.body5__logo-body {
+  margin-top: 115px;
+}
+
+.body5__col1 {
+  h2 {
+    margin-top: -37px;
+    font-family: Roboto-Black;
+    font-size: calc((48/14) * 1rem);
+    color: $body5__col1_h2_fc;
+
+    .b5c1_h2-span {
+      color: $body5__col1_span_fc;
+    }
+  }
+}

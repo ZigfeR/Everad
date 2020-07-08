@@ -1,0 +1,10 @@
+
+.section5 {
+    position: relative;
+    background-image: url(/images/section5/bg.png);
+    @import '../5__section5/1__section__body5.scss',
+    '../5__section5/2__body5_col1.scss',
+    '../5__section5/3__body5_row1.scss',
+    '../5__section5/4__body5_row2.scss',
+    '../5__section5/5__svg.scss';
+}

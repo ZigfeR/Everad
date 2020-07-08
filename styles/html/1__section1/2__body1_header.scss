@@ -1,0 +1,47 @@
+@import '../@__mixin/display-flex.scss',
+'../$__variables/2__font-color/font-color__section1.scss';
+
+.body1__header {
+  grid-column: 2/13;
+  @include flex-jstf-cntr();
+
+  .body1__header__logo {
+    @include flex-jstf-cntr();
+    color: $body__header__logo_fc;
+    font-size: calc((22/14) * 1rem);
+    font-family: Roboto-Black;
+    margin-left: 120px;
+    margin-top: -5px;
+
+    span {
+      margin: 0 15px;
+    }
+  }
+
+  .body1__header__info {
+    @include flex-jstf-cntr();
+    margin-left: 60px;
+
+    .info__span {
+      margin-left: 15px;
+      line-height: 19px;
+    }
+
+    .body1__header__info1 {
+      margin-left: 0;
+    }
+
+    .info__span,
+    .body1__header__info2 {
+      margin-right: 0;
+    }
+  }
+
+  .body1__header__info>* {
+    @include flex-jstf-cntr();
+    color: $body1__header__info_fc;
+    font-size: calc((16/14) * 1rem);
+    margin: 0 15px;
+    font-family: Roboto-Italic;
+  }
+}

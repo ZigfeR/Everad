@@ -1,0 +1,50 @@
+//flex
+@mixin flex-al-cntr() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-jstf-cntr() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-ff-clmn() {
+  display: flex;
+  flex-flow: column;  
+}
+
+@mixin flex-ff-clmn-cntr() {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+@mixin flex-jstf-spc_btwn() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-ff() {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flex-alc-ff() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin flex-jstf-start {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+@mixin flex-jstf-spc-evnl {
+  display: flex;
+  justify-content: space-evenly;
+}

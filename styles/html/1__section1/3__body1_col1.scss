@@ -1,0 +1,37 @@
+@import '../@__mixin/display-flex.scss',
+'../$__variables/1__color/color__section1.scss',
+'../$__variables/2__font-color/font-color__section1.scss';
+
+.body1__col1 {
+  z-index: 1;
+  position: absolute;
+
+  img {
+    position: relative;
+    left: -260px;
+  }
+
+  .price {
+    position: relative;
+    @include flex-jstf-cntr();
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Roboto-Black;
+    font-size: calc((32/14) * 1rem);
+    color: $body1__col1__price_fc;
+  }
+
+  .price1 {
+    top: -410px;
+    left: 250px;
+    background-color: $body1__col1__price1;
+  }
+
+  .price2 {
+    top: -315px;
+    left: 350px;
+    background-color: $body1__col1__price2;
+  }
+}

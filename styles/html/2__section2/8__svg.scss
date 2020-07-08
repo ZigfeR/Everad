@@ -1,0 +1,14 @@
+@import '../$__variables/1__color/color__section2.scss';
+svg {
+    position: absolute;
+}
+.wave1 {
+    top: -171px;
+    fill: $section2_bg_c;
+}
+.b2row__img_svg {
+    svg {
+        top: -18px;
+        left: -19px;
+    }
+}

@@ -1,0 +1,11 @@
+//body
+@import '../$__variables/1__color/color__body.scss';
+
+
+html {
+  background-color: $html;
+}
+
+body {
+  background-color: $body_background_color;
+}

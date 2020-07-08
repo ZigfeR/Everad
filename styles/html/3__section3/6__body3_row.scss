@@ -1,0 +1,106 @@
+@import '../@__mixin/display-flex.scss',
+'../$__variables/1__color/color__section3.scss',
+'../$__variables/2__font-color/font-color__section3.scss';
+
+.body3__row {
+  @include flex-ff-clmn-cntr();
+  margin-top: 35px;
+  text-align: center;
+  background-color: $body3__row_bg_c;
+  border-radius: 10px;
+  overflow: hidden;
+
+  //green border
+  &::before {
+    content: '';
+    height: 5px;
+    width: 370px;
+    background-color: $body3__row-border_bc_c;
+  }
+
+  .b3row-img {
+    @include flex-jstf-cntr();
+    position: absolute;
+    top: 260px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $section3_bg_c;
+  }
+
+  .b3r_p1 {
+    margin-top: 64px;
+    font-family: Roboto-Bold;
+    font-size: calc((24/14) * 1rem);
+    color: $b3r_p1_fc;
+  }
+
+  .b3r_p2 {
+    margin-top: 10px;
+    font-family: Roboto-Medium;
+    font-size: calc((18/14) * 1rem);
+    line-height: 26px;
+    color: $b3r_p2_fc;
+
+    .b3r_p2_ital {
+      font-family: Roboto-Italic;
+      font-size: calc((16/14) * 1rem);
+      color: $b3r_p2_ital_fc;
+    }
+  }
+
+  //arrow
+  .arrow_box {
+    position: relative;
+    border-bottom: 1px solid $arrow_box_bc_c;
+    margin-top: 25px;
+    width: 330px;
+  }
+
+  .arrow_box:after,
+  .arrow_box:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: '';
+    position: absolute;
+  }
+
+  .arrow_box:after {
+    border-top-color: $body3__row_bg_c;
+    border-width: 15px;
+    margin-left: -15px;
+  }
+
+  .arrow_box:before {
+    border-top-color: $arrow_box_bc_c;
+    border-width: 16px;
+    margin-left: -16px;
+  }
+
+  .b3r_p3 {
+    margin-top: 30px;
+    font-family: Roboto-Black;
+    font-size: calc((24/14) * 1rem);
+    color: $b3r_p3_fc;
+  }
+
+  .b3r_p4 {
+    margin-top: 13px;
+    font-family: Roboto-Regular;
+    font-size: calc((18/14) * 1rem);
+    line-height: 26px;
+    color: $b3r_p4_fc;
+
+    .b3r_p4--bold {
+      font-family: Roboto-Medium;
+      color: $b3r_p4_bold_fc;
+    }
+  }
+
+  .b3r_p2,
+  .b3r_p4 {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

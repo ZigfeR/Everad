@@ -1,0 +1,33 @@
+@import '../@__mixin/display-flex.scss',
+'../$__variables/1__color/color__section5.scss',
+'../$__variables/2__font-color/font-color__section5.scss';
+
+.body5__row2 {
+  grid-column: 7/13;
+  @include flex-ff-clmn();
+
+  .b5r2__col {
+    @include flex-al-cntr();
+    margin-bottom: 15px;
+
+    .b5r2_col-line_body {
+      @include flex-ff-clmn();
+      width: 265px;
+      margin-left: 30px;
+
+      .b5r2_col-line {
+        width: 20px;
+        height: 3px;
+        background-color: $b5r2_col-line_bg_c;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-family: Roboto-Medium;
+        font-size: calc((18/14) * 1rem);
+        line-height: 26px;
+        color: $b5r2_col-line_body_p_fc;
+      }
+    }
+  }
+}

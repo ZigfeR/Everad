@@ -1,9 +1,8 @@
-@import '../@__mixin/display-flex.scss',
-'../$__variables/2__font-color/font-color__section4.scss';
+@import "../@__mixin/display-flex.scss",
+"../$__variables/2__font-color/font-color__section4.scss";
 
 .body4__logo-body,
 .body4__col1 {
-  grid-column: 1/13;
   @include flex-ff-clmn-cntr();
 }
 
@@ -16,7 +15,7 @@
     margin-top: -17px;
     text-align: center;
     font-family: Roboto-Black;
-    font-size: calc((48/14) * 1rem);
+    font-size: calc((48 / 14) * 1rem);
     line-height: 48px;
     color: $body4__col1_fc;
 
@@ -28,7 +27,7 @@
   p {
     margin-top: 27px;
     font-family: Roboto-Regular;
-    font-size: calc((23/14) * 1rem);
+    font-size: calc((23 / 14) * 1rem);
     color: $body4__col1_p_fc;
   }
 }

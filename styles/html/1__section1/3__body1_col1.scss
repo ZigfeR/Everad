@@ -1,14 +1,14 @@
-@import '../@__mixin/display-flex.scss',
-'../$__variables/1__color/color__section1.scss',
-'../$__variables/2__font-color/font-color__section1.scss';
+@import "../@__mixin/display-flex.scss",
+"../$__variables/1__color/color__section1.scss",
+"../$__variables/2__font-color/font-color__section1.scss";
 
 .body1__col1 {
-  z-index: 1;
   position: absolute;
 
   img {
     position: relative;
     left: -260px;
+    z-index: 1;
   }
 
   .price {
@@ -19,8 +19,10 @@
     padding: 5px;
     border-radius: 10px;
     font-family: Roboto-Black;
-    font-size: calc((32/14) * 1rem);
+    font-size: calc((32 / 14) * 1rem);
     color: $body1__col1__price_fc;
+    z-index: 2;
+    user-select: none;
   }
 
   .price1 {

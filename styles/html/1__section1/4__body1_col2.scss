@@ -39,7 +39,7 @@
 
   .nc {
     @include flex-jstf-cntr();
-    margin: 40px 0;
+    margin: 37px 0;
 
     span {
       font-size: calc((20/14) * 1rem);
@@ -79,6 +79,7 @@
     font-family: Roboto-Bold;
     font-size: calc((20/14) * 1rem);
     color: $body1__col2__elipse_fc;
+    user-select: none;
   }
 
   .zagol_dot1,

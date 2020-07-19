@@ -1,9 +1,9 @@
 .section__body5 {
-    width: 1170px;
-    height: 750px;
-    display: grid;
-    grid-template-rows: 110px 110px 470px;
-    grid-template-columns: repeat(12, 70px);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+  max-width: 1170px;
+  min-height: 750px;
+  display: grid;
+  grid-template-rows: 110px 110px 470px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
 }

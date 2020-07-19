@@ -55,6 +55,7 @@
       .priceOld__sum {
         font-family: Roboto-Light;
         position: relative;
+        user-select: none;
 
         &::after {
           content: '';
@@ -125,6 +126,7 @@
         border: 2px solid $d1c3__date__priceButton_body_border;
         border-radius: 60px;
         outline: none;
+        user-select: none;
 
         .priceButton__size {
           font-size: 28px;
@@ -161,8 +163,10 @@
 
   .d1c3__priceReinbow {
     position: relative;
+    width: 49px;
     left: 240px;
-    bottom: 375px;
+    right: 0;
+    bottom: 380px;
   }
 
   .d1c3__priceBlock,

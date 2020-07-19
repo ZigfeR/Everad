@@ -4,6 +4,7 @@
 .body1__header {
   grid-column: 2/13;
   @include flex-jstf-cntr();
+  z-index: 15;
 
   .body1__header__logo {
     @include flex-jstf-cntr();

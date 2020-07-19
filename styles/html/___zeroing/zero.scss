@@ -44,7 +44,6 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1;
-
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -61,10 +60,12 @@ a:not([class]) {
 /* Упрощаем работу с изображениями */
 img {
   display: block;
+  user-select: none;
+  pointer-events: none;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article>*+* {
+article > * + * {
   margin-top: 1em;
 }
 

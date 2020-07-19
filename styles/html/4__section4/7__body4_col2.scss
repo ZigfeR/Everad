@@ -3,7 +3,7 @@
 '../$__variables/2__font-color/font-color__section4.scss';
 
 .body4__col2 {
-
+  grid-column: 1/13;
   @include flex-ff-clmn-cntr();
 
   text-align: center;

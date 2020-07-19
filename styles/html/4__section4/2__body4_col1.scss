@@ -4,6 +4,7 @@
 .body4__logo-body,
 .body4__col1 {
   @include flex-ff-clmn-cntr();
+  grid-column: 1/13;
 }
 
 .body4__logo-body {

@@ -1,8 +1,3 @@
 .section__body1 {
-  max-width: 1170px;
-  display: grid;
   grid-template-rows: 90px 555px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
 }

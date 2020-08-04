@@ -1,7 +1,1 @@
-@import
-'../@__mixin/display-flex.scss';
 
-.body5__row1 {
-    grid-column: 1/7;
-    @include flex-alc-ff();
-}

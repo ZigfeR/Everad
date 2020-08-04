@@ -7,6 +7,14 @@
 
 :root {
   font-size: 14px;
+
+  @media (max-width:1140px) {
+    font-size: 12px;
+  }
+
+  @media (max-width:720px) {
+    font-size: 9px;
+  }
 }
 
 /* Убираем внутренние отступы */
@@ -65,7 +73,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 

@@ -16,17 +16,24 @@
 }
 
 .body2__row {
-  @media (min-width:720px) and (max-width:1279px) {
+  margin: 30px 10%;
+
+  @media (max-width:1140px) {
     grid-column: 1/13;
-    @include flex-ff-clmn-cntr();
+    text-align: center;
   }
+
+  @media (max-width:720px) {
+    margin: 15px 5%;
+  }
+
 }
 
 
 .b2row__body {
   @include flex-jstf-cntr();
 
-  @media (min-width:720px) and (max-width:1279px) {
+  @media (max-width:1140px) {
     @include flex-ff-clmn-cntr();
   }
 }
@@ -110,4 +117,12 @@
   color: $b2row__text_fc;
   margin: 13px 57px 0 0;
   line-height: 28px;
+}
+
+.b2row__border,
+.b2row__them,
+.b2row__text {
+  @media (max-width:1140px) {
+    margin: 10px auto;
+  }
 }

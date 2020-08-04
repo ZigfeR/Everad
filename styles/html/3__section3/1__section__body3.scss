@@ -1,4 +1,9 @@
 .section__body3 {
   min-height: 1190px;
   grid-template-rows: 104px 110px 620px 170px;
+
+  @media (max-width:1279px) {
+    grid-template-rows: 1fr;
+  }
+
 }

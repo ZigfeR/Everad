@@ -17,5 +17,9 @@
     font-family: Roboto-Black;
     font-size: calc((48/14) * 1rem);
     color: $body3__col1_h2_fc;
+
+    @media (max-width:1279px) {
+      margin: 0 10%;
+    }
   }
 }

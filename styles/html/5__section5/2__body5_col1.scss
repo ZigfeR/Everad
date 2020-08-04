@@ -5,6 +5,7 @@
 .body5__col1 {
   grid-column: 1/13;
   @include flex-jstf-cntr();
+
 }
 
 .body5__logo-body {
@@ -18,8 +19,14 @@
     font-size: calc((48/14) * 1rem);
     color: $body5__col1_h2_fc;
 
+    @media (max-width:960px) {
+      margin: 0 10%;
+      text-align: center;
+    }
+
     .b5c1_h2-span {
       color: $body5__col1_span_fc;
     }
   }
+
 }

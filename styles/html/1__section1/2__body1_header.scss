@@ -5,6 +5,12 @@
   grid-column: 2/13;
   @include flex-jstf-cntr();
   z-index: 15;
+  flex-wrap: wrap;
+
+  @media (max-width:1280px) {
+    grid-column: 1/13;
+  }
+
 
   .body1__header__logo {
     @include flex-jstf-cntr();
@@ -14,6 +20,18 @@
     margin-left: 120px;
     margin-top: -5px;
 
+    @media (max-width:1280px) {
+      margin: 0px;
+    }
+
+    @media (max-width:960px) {
+      margin: 20px;
+    }
+
+    @media (max-width:540px) {
+      margin: 10px;
+    }
+
     span {
       margin: 0 15px;
     }
@@ -22,6 +40,21 @@
   .body1__header__info {
     @include flex-jstf-cntr();
     margin-left: 60px;
+
+    @media (max-width:1280px) {
+      margin: 0px;
+    }
+
+    @media (max-width:720px) {
+      flex-wrap: wrap;
+      margin: 15px;
+    }
+
+    .header__info {
+      @media (max-width:720px) {
+        margin: 15px;
+      }
+    }
 
     .info__span {
       margin-left: 15px;

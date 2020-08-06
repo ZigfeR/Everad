@@ -1,4 +1,12 @@
 .section__body5 {
   min-height: 750px;
   grid-template-rows: 110px 110px 470px;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+
+  @media (max-width:1140px) {
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
 }

@@ -1,3 +1,11 @@
 .section__body1 {
   grid-template-rows: 90px 555px;
+
+  @media (max-width:1140px) {
+    grid-template-rows: auto auto 540px;
+  }
+
+  @media (max-width:540px) {
+    grid-template-rows: auto;
+  }
 }

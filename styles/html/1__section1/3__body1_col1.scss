@@ -36,4 +36,8 @@
     left: 350px;
     background-color: $body1__col1__price2;
   }
+
+  @media (max-width:1280px) {
+    display: none;
+  }
 }

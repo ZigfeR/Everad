@@ -5,6 +5,11 @@
 .body2__col1 {
   grid-column: 1/13;
   @include flex-jstf-cntr();
+
+  @media (max-width:1140px) {
+    margin: 30px 10%;
+    text-align: center;
+  }
 }
 
 .body2__col1 {
@@ -30,5 +35,9 @@
     font-family: Roboto-Bold;
     font-size: calc((24/14) * 1rem);
     color: $body2__to_h2_fc;
+
+    @media (max-width:1140px) {
+      margin-top: 12px;
+    }
   }
 }

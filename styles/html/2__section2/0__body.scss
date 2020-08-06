@@ -1,14 +1,11 @@
 @import '../$__variables/1__color/color__section2.scss';
 
 .section2 {
-    background-color: $section2_bg_c;
-    position: relative;
-    @import '../2__section2/1__section__body2.scss',
-    '../2__section2/2__body2_col1.scss',
-    '../2__section2/3__body2_row1.scss',
-    '../2__section2/4__body2_row2.scss',
-    '../2__section2/5__body2_row3.scss',
-    '../2__section2/6__body2_row.scss',
-    '../2__section2/7__body2_col2.scss',
-    '../2__section2/8__svg.scss'; 
+  background-color: $section2_bg_c;
+  position: relative;
+  @import '../2__section2/1__section__body2.scss',
+  '../2__section2/2__body2_col1.scss',
+  '../2__section2/6__body2_row.scss',
+  '../2__section2/7__body2_col2.scss',
+  '../2__section2/8__svg.scss';
 }

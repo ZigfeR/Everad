@@ -3,12 +3,7 @@
   min-height: 900px;
   grid-template-rows: 92px 110px 330px 150px;
 
-  @media (min-width:720px) and (max-width:1279px) {
-    background-color: blue;
+  @media (max-width:1140px) {
     grid-template-rows: 1fr;
-  }
-
-  @media (max-width:719px) {
-    background-color: red;
   }
 }

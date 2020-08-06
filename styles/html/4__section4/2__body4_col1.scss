@@ -12,6 +12,10 @@
 }
 
 .body4__col1 {
+  @media (max-width:1279px) {
+    margin: 0 10%;
+  }
+
   h2 {
     margin-top: -17px;
     text-align: center;
@@ -30,5 +34,11 @@
     font-family: Roboto-Regular;
     font-size: calc((23 / 14) * 1rem);
     color: $body4__col1_p_fc;
+
+    @media (max-width:1279px) {
+      text-align: center;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
   }
 }
